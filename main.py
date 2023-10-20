@@ -14,11 +14,10 @@ if __name__ == "__main__":
 
     # Ask for desired operation
     operation_choice = int(input("Enter 1 to extract from eml/msg or 2 to send email: "))
-    
-    print("\n\t\t\033[1m\033[4mEmail Body & Subject Extractor\033[0m\n")
 
     # Check if the user wants to extract data from eml/msg files
     if operation_choice == 1:
+        print("\n\t\t\033[1m\033[4mEmail Body & Subject Extractor\033[0m\n")
         extraction = []
 
         # Folder Path containing Eml/Msg Files
