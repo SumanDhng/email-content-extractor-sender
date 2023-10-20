@@ -18,9 +18,10 @@ pip install -r requirements.txt
 2. Create a file named `credentials.env` and include the following environment variables:
 
     ```
-    DISPLAY_NAME=Your_Display_Name
-    EMAIL=Your_Email_Address
-    PASSWORD=Your_Email_Password
+    DISPLAY_NAME = Your_Display_Name
+    EMAIL = Your_Email_Address
+    PASSWORD = Your_Email_Password
+    RECEIVER_EMAIL = Receiver_Email_Address
     ```
     
 3. Run the script using the following command:
