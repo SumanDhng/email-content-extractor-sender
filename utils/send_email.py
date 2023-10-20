@@ -9,7 +9,7 @@ def send_email(json_data):
     display_name = os.getenv("DISPLAY_NAME") # Load Display Name from environment file
     my_email=os.getenv("EMAIL") # Load Email Address from environment file
     my_password = os.getenv("PASSWORD") # Load Password from environment file
-    receiver_email = os.getenv("RECEIVER_EMAIL") # Load bot's email from environment file
+    receiver_email = os.getenv("RECEIVER_EMAIL") # Load Receiver's email from environment file
 
     print(f"Sending as: {my_email}")
 
@@ -18,7 +18,7 @@ def send_email(json_data):
     server.starttls()
     server.login(my_email, my_password)
 
-    # iterate through json and send it to the bot 
+    # iterate through json and send it to the receiver 
     for json in json_data:
         msg = email.message.EmailMessage()
         print(f"Sending Data of {json['file_name']}")
